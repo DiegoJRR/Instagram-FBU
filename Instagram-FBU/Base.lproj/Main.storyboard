@@ -56,11 +56,46 @@
                         <outlet property="emailField" destination="5In-ek-8aF" id="Htx-0L-1at"/>
                         <outlet property="passwordField" destination="sEa-7A-leE" id="bYI-aO-xGq"/>
                         <outlet property="usernameField" destination="DTp-D5-Gjz" id="gtZ-3C-fqv"/>
+                        <segue destination="P38-Hh-4Dx" kind="presentation" identifier="loginToMainSegue" id="b4v-bt-Jpw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ra9-Rx-P5l">
+            <objects>
+                <viewController id="b6v-ha-z6O" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wUa-MQ-3AW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UJb-yA-DNB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PS6-p3-Vud"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kE5-sp-GF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040.5797101449277" y="180.80357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QVW-XG-QNS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P38-Hh-4Dx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dYC-uk-Vzf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b6v-ha-z6O" kind="relationship" relationship="rootViewController" id="SeP-EK-dbV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCS-sE-v9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130.4347826086957" y="180.80357142857142"/>
         </scene>
     </scenes>
 </document>
