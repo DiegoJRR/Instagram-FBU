@@ -16,6 +16,7 @@
 		2F83650F24B3BD9C005B4D13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F83650E24B3BD9C005B4D13 /* main.m */; };
 		2F83651924B3BD9C005B4D13 /* Instagram_FBUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F83651824B3BD9C005B4D13 /* Instagram_FBUTests.m */; };
 		2F83652424B3BD9C005B4D13 /* Instagram_FBUUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F83652324B3BD9C005B4D13 /* Instagram_FBUUITests.m */; };
+		2F83653224B3BE0E005B4D13 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2F83653124B3BE0E005B4D13 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2F83651F24B3BD9C005B4D13 /* Instagram-FBUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instagram-FBUUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F83652324B3BD9C005B4D13 /* Instagram_FBUUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instagram_FBUUITests.m; sourceTree = "<group>"; };
 		2F83652524B3BD9C005B4D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F83653124B3BE0E005B4D13 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		2F8364F024B3BD9A005B4D13 = {
 			isa = PBXGroup;
 			children = (
+				2F83653124B3BE0E005B4D13 /* .gitignore */,
 				2F8364FB24B3BD9A005B4D13 /* Instagram-FBU */,
 				2F83651724B3BD9C005B4D13 /* Instagram-FBUTests */,
 				2F83652224B3BD9C005B4D13 /* Instagram-FBUUITests */,
@@ -240,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F83653224B3BE0E005B4D13 /* .gitignore in Resources */,
 				2F83650C24B3BD9C005B4D13 /* LaunchScreen.storyboard in Resources */,
 				2F83650924B3BD9C005B4D13 /* Assets.xcassets in Resources */,
 				2F83650724B3BD9A005B4D13 /* Main.storyboard in Resources */,
@@ -440,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJJJ25GZT2;
 				INFOPLIST_FILE = "Instagram-FBU/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJJJ25GZT2;
 				INFOPLIST_FILE = "Instagram-FBU/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
