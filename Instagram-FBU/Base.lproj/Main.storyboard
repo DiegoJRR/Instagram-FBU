@@ -89,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="128" y="151"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--Title-->
         <scene sceneID="ra9-Rx-P5l">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="b6v-ha-z6O" customClass="FeedViewController" sceneMemberID="viewController">
@@ -99,7 +99,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="UJb-yA-DNB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PS6-p3-Vud">
+                    <navigationItem key="navigationItem" title="Title" id="PS6-p3-Vud">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="oE0-VP-BXS">
                             <connections>
                                 <action selector="logout:" destination="b6v-ha-z6O" id="MvN-4G-CEc"/>
@@ -114,7 +114,7 @@
         <!--Navigation Controller-->
         <scene sceneID="QVW-XG-QNS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="P38-Hh-4Dx" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="FeedViewController" storyboardIdentifier="FeedViewController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="P38-Hh-4Dx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="SN4-o3-DE1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dYC-uk-Vzf">
