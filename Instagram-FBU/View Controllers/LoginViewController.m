@@ -49,6 +49,29 @@
     }
 }
 
+- (IBAction)login:(id)sender {
+    if (self.usernameField.hasText && self.passwordField.hasText && self.emailField.hasText) {
+        
+        // Get users data from the text fields
+        NSString *username = self.usernameField.text;
+        NSString *password = self.passwordField.text;
+        
+        // Login using the Parser pod
+        [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
+            if (error != nil) {
+                NSLog(@"User log in failed: %@", error.localizedDescription);
+            } else {
+                NSLog(@"User logged in successfully");
+                
+                // manually segue to logged in view
+                [self performSegueWithIdentifier:@"loginToMainSegue" sender:nil];
+            }
+        }];
+    } else {
+        NSLog(@"Missing information for Sign Up");
+    }
+}
+
 /*
 #pragma mark - Navigation
 
