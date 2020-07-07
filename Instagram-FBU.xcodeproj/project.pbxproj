@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F382A4D24B3E455005C16B9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F382A4C24B3E455005C16B9 /* LoginViewController.m */; };
+		2F382A5024B4AC85005C16B9 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F382A4F24B4AC85005C16B9 /* FeedViewController.m */; };
 		2F8364FE24B3BD9A005B4D13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8364FD24B3BD9A005B4D13 /* AppDelegate.m */; };
 		2F83650124B3BD9A005B4D13 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F83650024B3BD9A005B4D13 /* SceneDelegate.m */; };
 		2F83650724B3BD9A005B4D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F83650524B3BD9A005B4D13 /* Main.storyboard */; };
@@ -45,6 +46,8 @@
 		2649700C1B6DDDF057D6E4FB /* Pods-Instagram-FBUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-FBUTests.release.xcconfig"; path = "Target Support Files/Pods-Instagram-FBUTests/Pods-Instagram-FBUTests.release.xcconfig"; sourceTree = "<group>"; };
 		2F382A4B24B3E455005C16B9 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		2F382A4C24B3E455005C16B9 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2F382A4E24B4AC84005C16B9 /* FeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		2F382A4F24B4AC85005C16B9 /* FeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		2F8364F924B3BD9A005B4D13 /* Instagram-FBU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-FBU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8364FC24B3BD9A005B4D13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F8364FD24B3BD9A005B4D13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 			children = (
 				2F382A4B24B3E455005C16B9 /* LoginViewController.h */,
 				2F382A4C24B3E455005C16B9 /* LoginViewController.m */,
+				2F382A4E24B4AC84005C16B9 /* FeedViewController.h */,
+				2F382A4F24B4AC85005C16B9 /* FeedViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F382A4D24B3E455005C16B9 /* LoginViewController.m in Sources */,
+				2F382A5024B4AC85005C16B9 /* FeedViewController.m in Sources */,
 				2F8364FE24B3BD9A005B4D13 /* AppDelegate.m in Sources */,
 				2F83650F24B3BD9C005B4D13 /* main.m in Sources */,
 				2F83650124B3BD9A005B4D13 /* SceneDelegate.m in Sources */,
