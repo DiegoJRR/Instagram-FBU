@@ -15,19 +15,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="insta_camera_btn" translatesAutoresizingMaskIntoConstraints="NO" id="aKC-QM-4vK">
-                                <rect key="frame" x="161" y="404" width="93" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="insta_camera_btn" translatesAutoresizingMaskIntoConstraints="NO" id="aKC-QM-4vK">
+                                <rect key="frame" x="160.5" y="403.5" width="93" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="qQm-Lx-kf5"/>
+                                    <constraint firstAttribute="width" constant="93" id="s44-1z-kCQ"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UP-de-hmt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UP-de-hmt">
                                 <rect key="frame" x="110" y="303" width="194" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8Ao-mQ-BIu"/>
+                                    <constraint firstAttribute="width" constant="194" id="IJE-xk-1ld"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.91587793827056885" green="0.25435732495555302" blue="0.60889279676021013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aKC-QM-4vK" firstAttribute="top" secondItem="6UP-de-hmt" secondAttribute="bottom" constant="40.5" id="5ME-c7-Gc8"/>
+                            <constraint firstItem="aKC-QM-4vK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="B8F-fr-v9J"/>
+                            <constraint firstItem="aKC-QM-4vK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="KBB-gZ-Usz"/>
+                            <constraint firstItem="6UP-de-hmt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O8x-V4-mzl"/>
+                            <constraint firstItem="aKC-QM-4vK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PAX-rB-0rZ"/>
+                            <constraint firstItem="aKC-QM-4vK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hAb-tH-5Uy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
