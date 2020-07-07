@@ -15,42 +15,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7O-Cr-7GK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7O-Cr-7GK">
                                 <rect key="frame" x="73" y="126" width="268" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="fvo-4P-P5N"/>
+                                    <constraint firstAttribute="height" constant="84" id="iDR-op-bsB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DTp-D5-Gjz">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DTp-D5-Gjz">
                                 <rect key="frame" x="113" y="251" width="190" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEM-Yp-ApT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEM-Yp-ApT">
                                 <rect key="frame" x="113" y="426" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TR7-tH-08R"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5In-ek-8aF">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5In-ek-8aF">
                                 <rect key="frame" x="113" y="302" width="190" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sEa-7A-leE">
-                                <rect key="frame" x="112" y="350" width="190" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sEa-7A-leE">
+                                <rect key="frame" x="113" y="350" width="190" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UC2-nd-92y">
-                                <rect key="frame" x="261" y="426" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UC2-nd-92y">
+                                <rect key="frame" x="265" y="426" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4d-ij-w9t"/>
@@ -58,6 +56,26 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DTp-D5-Gjz" secondAttribute="trailing" constant="111" id="3cK-C2-7IO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5In-ek-8aF" secondAttribute="trailing" constant="111" id="3gy-DW-lqv"/>
+                            <constraint firstItem="fEM-Yp-ApT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="3qB-p3-zKm"/>
+                            <constraint firstItem="DTp-D5-Gjz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="B3Z-xt-BTC"/>
+                            <constraint firstItem="sEa-7A-leE" firstAttribute="top" secondItem="5In-ek-8aF" secondAttribute="bottom" constant="14" id="B9d-71-vOX"/>
+                            <constraint firstItem="5In-ek-8aF" firstAttribute="leading" secondItem="DTp-D5-Gjz" secondAttribute="leading" id="Dvq-FT-KvG"/>
+                            <constraint firstItem="c7O-Cr-7GK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MOM-U0-Lff"/>
+                            <constraint firstItem="fEM-Yp-ApT" firstAttribute="leading" secondItem="DTp-D5-Gjz" secondAttribute="leading" id="OuC-lw-L1y"/>
+                            <constraint firstItem="sEa-7A-leE" firstAttribute="leading" secondItem="DTp-D5-Gjz" secondAttribute="leading" id="RaZ-dV-Fhy"/>
+                            <constraint firstItem="c7O-Cr-7GK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="S2z-cX-OfL"/>
+                            <constraint firstItem="5In-ek-8aF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="Upp-H9-N5k"/>
+                            <constraint firstItem="UC2-nd-92y" firstAttribute="top" secondItem="fEM-Yp-ApT" secondAttribute="top" id="Yfa-LK-yNc"/>
+                            <constraint firstItem="fEM-Yp-ApT" firstAttribute="top" secondItem="sEa-7A-leE" secondAttribute="bottom" constant="42" id="aBv-lf-cvo"/>
+                            <constraint firstItem="sEa-7A-leE" firstAttribute="trailing" secondItem="DTp-D5-Gjz" secondAttribute="trailing" id="hBs-vU-UoE"/>
+                            <constraint firstItem="5In-ek-8aF" firstAttribute="trailing" secondItem="DTp-D5-Gjz" secondAttribute="trailing" id="mK0-NH-Tlq"/>
+                            <constraint firstItem="5In-ek-8aF" firstAttribute="top" secondItem="DTp-D5-Gjz" secondAttribute="bottom" constant="17" id="olv-AP-JtT"/>
+                            <constraint firstItem="UC2-nd-92y" firstAttribute="trailing" secondItem="DTp-D5-Gjz" secondAttribute="trailing" id="uJ1-KZ-0ke"/>
+                            <constraint firstItem="DTp-D5-Gjz" firstAttribute="top" secondItem="c7O-Cr-7GK" secondAttribute="bottom" constant="41" id="umB-XW-kjN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
