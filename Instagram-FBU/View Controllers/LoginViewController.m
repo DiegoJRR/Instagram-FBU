@@ -23,6 +23,15 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)presentAlert:(NSString *)title message:(NSString *)message_body {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message: message_body preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+        // Ok action example
+    }];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 - (IBAction)signUp:(id)sender {
     if (self.usernameField.hasText && self.passwordField.hasText && self.emailField.hasText) {
         // initialize a user object
@@ -37,6 +46,8 @@
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
             if (error != nil) {
                 NSLog(@"Error: %@", error.localizedDescription);
+                
+                [self presentAlert:@"Error" message: error.localizedDescription];
             } else {
                 NSLog(@"User registered successfully");
                 
@@ -60,6 +71,8 @@
         [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
             if (error != nil) {
                 NSLog(@"User log in failed: %@", error.localizedDescription);
+                
+                [self presentAlert:@"Error" message: error.localizedDescription];
             } else {
                 NSLog(@"User logged in successfully");
                 
