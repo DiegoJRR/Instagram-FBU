@@ -7,6 +7,7 @@
 //
 
 #import "ComposeViewController.h"
+#import "Post.h"
 
 @interface ComposeViewController ()
 
@@ -41,7 +42,6 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     
     // Get the image captured by the UIImagePickerController
-    UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
 
     // Do something with the images (based on your use case)
@@ -49,6 +49,46 @@
     
     // Dismiss UIImagePickerController to go back to your original view controller
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)backToFeed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size {
+    UIImageView *resizeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+    
+    resizeImageView.contentMode = UIViewContentModeScaleAspectFill;
+    resizeImageView.image = image;
+    
+    UIGraphicsBeginImageContext(size);
+    [resizeImageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
+- (IBAction)sharePost:(id)sender {
+    if (self.pictureView.image != nil  && self.textView.hasText) {
+        // Send the post using Parse
+        UIImage *resized = [self resizeImage:self.pictureView.image withSize:CGSizeMake(150, 150)];
+        
+        [Post postUserImage:resized withCaption:self.textView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+            // Code to exectute when posted successfully
+            if (!error) {
+                NSLog(@"Image Posted");
+                [self dismissViewControllerAnimated:YES completion:nil];
+                
+            } else {
+                NSLog(@"%@", error.localizedDescription);
+            }
+        }];
+        
+    } else {
+        // Show alert message asking the user to fill in the picture and text before posting
+        // Alternatively, shake and outline in red the missing fields
+        NSLog(@"Missing picture/text");
+    }
 }
 
 /*
