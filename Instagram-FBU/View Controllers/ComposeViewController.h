@@ -1,5 +1,5 @@
 //
-//  FeedViewController.h
+//  ComposeViewController.h
 //  Instagram-FBU
 //
 //  Created by Diego de Jesus Ramirez on 07/07/20.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeedViewController : UIViewController 
+@interface ComposeViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @end
 
