@@ -169,8 +169,16 @@
                         <viewLayoutGuide key="safeArea" id="WAo-bx-77t"/>
                     </view>
                     <navigationItem key="navigationItem" id="IRY-VB-224">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="zhq-hV-hV6"/>
-                        <barButtonItem key="rightBarButtonItem" title="Share" id="d4E-xU-joE"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="zhq-hV-hV6">
+                            <connections>
+                                <action selector="backToFeed:" destination="Sch-5b-EjO" id="xj2-O6-Wl8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="d4E-xU-joE">
+                            <connections>
+                                <action selector="sharePost:" destination="Sch-5b-EjO" id="Dao-yk-Y28"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="pictureView" destination="HCK-f7-oad" id="oai-GT-YSM"/>
@@ -184,7 +192,6 @@
         <!--Navigation Controller-->
         <scene sceneID="QMb-9Z-3Af">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p6A-Dz-OhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="t80-8d-53w" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2t4-xF-rWG">
@@ -196,6 +203,7 @@
                         <segue destination="Sch-5b-EjO" kind="relationship" relationship="rootViewController" id="QZB-9v-KAX"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6A-Dz-OhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2029" y="885"/>
         </scene>
