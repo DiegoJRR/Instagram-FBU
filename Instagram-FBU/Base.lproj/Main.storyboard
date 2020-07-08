@@ -105,6 +105,12 @@
                                 <action selector="logout:" destination="b6v-ha-z6O" id="MvN-4G-CEc"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="ml8-Zv-qbd">
+                            <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="t80-8d-53w" kind="presentation" id="XZq-Yz-LMe"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kE5-sp-GF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -130,5 +136,72 @@
             </objects>
             <point key="canvasLocation" x="1042" y="151"/>
         </scene>
+        <!--Compose View Controller-->
+        <scene sceneID="Mai-KF-cz7">
+            <objects>
+                <viewController id="Sch-5b-EjO" customClass="ComposeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pFa-r6-Grp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HCK-f7-oad">
+                                <rect key="frame" x="-13" y="130" width="427" height="307"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy6-b2-NOI">
+                                <rect key="frame" x="165" y="92" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take Picture"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="Sch-5b-EjO" eventType="touchUpInside" id="3AV-4d-J6F"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write your post here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NW5-NV-4Ce">
+                                <rect key="frame" x="20" y="470" width="374" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WAo-bx-77t"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IRY-VB-224">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="zhq-hV-hV6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="d4E-xU-joE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pictureView" destination="HCK-f7-oad" id="oai-GT-YSM"/>
+                        <outlet property="textView" destination="NW5-NV-4Ce" id="6hC-pd-0j0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obo-2e-NRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028.985507246377" y="1609.8214285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QMb-9Z-3Af">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6A-Dz-OhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="t80-8d-53w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2t4-xF-rWG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sch-5b-EjO" kind="relationship" relationship="rootViewController" id="QZB-9v-KAX"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2029" y="885"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="image_placeholder" width="375" height="375"/>
+        <image name="insta_camera_btn" width="25" height="25"/>
+    </resources>
 </document>
