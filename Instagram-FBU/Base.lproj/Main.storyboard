@@ -131,6 +131,7 @@
                                 <connections>
                                     <outlet property="captionLabel" destination="n8F-gm-bkJ" id="S4t-13-3du"/>
                                     <outlet property="postImage" destination="FfN-Kj-jY8" id="yyr-8k-FKZ"/>
+                                    <segue destination="7t1-Zq-R0q" kind="show" identifier="detailSegue" id="E4V-fF-IAl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -245,6 +246,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6A-Dz-OhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2029" y="885"/>
+        </scene>
+        <!--Post detail-->
+        <scene sceneID="5km-Z4-Sht">
+            <objects>
+                <viewController title="Post detail" modalPresentationStyle="fullScreen" id="7t1-Zq-R0q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yly-nb-nQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HGY-FX-b7e"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g9c-hF-BUS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ng-Gg-nVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781" y="882"/>
         </scene>
     </scenes>
     <resources>
