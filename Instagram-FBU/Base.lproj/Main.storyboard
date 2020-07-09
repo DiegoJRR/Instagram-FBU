@@ -98,11 +98,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="375" id="ptX-qq-Ds2" customClass="PostTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="414" height="375"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" id="ptX-qq-Ds2" customClass="PostTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="350"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ptX-qq-Ds2" id="9zo-aj-hnO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-Kj-jY8">
@@ -112,7 +112,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8F-gm-bkJ">
-                                            <rect key="frame" x="20" y="308" width="60" height="20.5"/>
+                                            <rect key="frame" x="20" y="308" width="59.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -124,7 +124,7 @@
                                         <constraint firstItem="FfN-Kj-jY8" firstAttribute="top" secondItem="9zo-aj-hnO" secondAttribute="top" id="Okr-Yy-jpU"/>
                                         <constraint firstItem="n8F-gm-bkJ" firstAttribute="top" secondItem="FfN-Kj-jY8" secondAttribute="bottom" constant="8" id="amS-0X-46Z"/>
                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="n8F-gm-bkJ" secondAttribute="bottom" constant="10" id="c4W-4Y-bWm"/>
-                                        <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="n8F-gm-bkJ" secondAttribute="trailing" constant="314" id="i4k-9K-eBq"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="n8F-gm-bkJ" secondAttribute="trailing" constant="10" id="i4k-9K-eBq"/>
                                         <constraint firstAttribute="trailing" secondItem="FfN-Kj-jY8" secondAttribute="trailing" id="xqR-7b-o0A"/>
                                     </constraints>
                                 </tableViewCellContentView>
