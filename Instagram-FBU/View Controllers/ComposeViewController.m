@@ -50,6 +50,7 @@
     // Dismiss UIImagePickerController to go back to your original view controller
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (IBAction)backToFeed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -71,7 +72,7 @@
 - (IBAction)sharePost:(id)sender {
     if (self.pictureView.image != nil  && self.textView.hasText) {
         // Send the post using Parse
-        UIImage *resized = [self resizeImage:self.pictureView.image withSize:CGSizeMake(150, 150)];
+        UIImage *resized = [self resizeImage:self.pictureView.image withSize:CGSizeMake(1000, 1000)];
         
         [Post postUserImage:resized withCaption:self.textView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
             // Code to exectute when posted successfully
