@@ -63,6 +63,8 @@
     
     Post *post = self.posts[indexPath.row];
     
+    cell.captionLabel.text = post.caption;
+    
     // Load image from PFFileObject
     // Instantiate a weak link to the cell and load in the image in the request
     __weak PostTableViewCell *weakSelf = cell;
