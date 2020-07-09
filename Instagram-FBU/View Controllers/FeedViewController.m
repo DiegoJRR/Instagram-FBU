@@ -51,13 +51,19 @@
         NSLog(@"Here");
         if (posts != nil && !error) {
             // do something with the array of object returned by the call
+            
+            // Reverse the posts to show the most recent ones first
+            // TODO: Add this to the query, to pass the workload to the server. Might even be necessary for infinite scrolling!
+            posts = [[posts reverseObjectEnumerator] allObjects];
+            
+            
             self.posts = [NSMutableArray arrayWithArray:posts];
             [self.tableView  reloadData];
         } else {
             NSLog(@"%@", error.localizedDescription);
         }
         
-        // Stio the refresh control 
+        // Stio the refresh control
         [self.refreshControl endRefreshing];
     }];
 }
