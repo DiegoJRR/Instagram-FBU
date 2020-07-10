@@ -12,6 +12,7 @@
 #import <Parse/Parse.h>
 #import "Post.h"
 #import "PostTableViewCell.h"
+#import "DetailsViewController.h"
 
 @interface FeedViewController ()
 
@@ -105,15 +106,27 @@
     }];
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//     Get the new view controller using [segue destinationViewController].
+//     Pass the selected object to the new view controller.
+    
+    // Set the tappedCell as the cell that initiated the segue
+    UITableViewCell *tappedCell = sender;
+    
+    // Get the corresponding indexPath of the cell
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:tappedCell];
+    
+    // Get the movie corresponding to that cell
+    Post *post = self.posts[indexPath.row];
+    
+    // Set the viewController to segue into and pass the movie object
+    DetailsViewController *detailsViewController = [segue destinationViewController];
+    detailsViewController.post = post;
 }
-*/
+
 
 
 

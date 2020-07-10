@@ -9,6 +9,9 @@
 #import "DetailsViewController.h"
 
 @interface DetailsViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *postView;
+@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timestampLabel;
 
 @end
 
@@ -17,6 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    //Setup the post caption and label
+    self.captionLabel.text = self.post.caption;
+    
+    // Load image from PFFileObject
+    // Instantiate a weak link to the cell and load in the image in the request
+    [self.post.image getDataInBackgroundWithBlock:^(NSData *_Nullable data, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"Error getting image from data: %@", error.localizedDescription);
+        } else {
+            self.postView.image = [UIImage imageWithData:data];
+        }
+    }];
 }
 
 /*
