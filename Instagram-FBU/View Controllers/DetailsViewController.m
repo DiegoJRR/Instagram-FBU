@@ -7,11 +7,14 @@
 //
 
 #import "DetailsViewController.h"
+#import "DateTools.h"
+#import "NSDate+TimeAgo.h"
 
 @interface DetailsViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *postView;
 @property (weak, nonatomic) IBOutlet UILabel *captionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timestampLabel;
 
 @end
 
@@ -35,6 +38,11 @@
             self.postView.image = [UIImage imageWithData:data];
         }
     }];
+    
+    NSDate *createdAt = [self.post createdAt];
+    NSString *ago = [createdAt timeAgo];
+    NSString *createdAtString = ago;
+    self.timestampLabel.text = createdAtString;
 }
 
 /*

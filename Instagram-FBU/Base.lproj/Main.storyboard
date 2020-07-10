@@ -279,19 +279,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCs-Uz-rYP">
+                                <rect key="frame" x="352" y="102" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Aeq-81-QRc" firstAttribute="leading" secondItem="plB-x2-a1G" secondAttribute="leading" constant="20" id="4Jk-hw-Cn8"/>
+                            <constraint firstItem="plB-x2-a1G" firstAttribute="trailing" secondItem="bCs-Uz-rYP" secondAttribute="trailing" constant="20" id="5Q4-JO-2nI"/>
                             <constraint firstItem="plB-x2-a1G" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CHp-Ny-lqT" secondAttribute="trailing" constant="20" id="BDS-Zv-a7j"/>
                             <constraint firstItem="plB-x2-a1G" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CHp-Ny-lqT" secondAttribute="bottom" constant="20" id="C8o-vi-UCD"/>
                             <constraint firstItem="ePU-z4-mBh" firstAttribute="top" secondItem="Aeq-81-QRc" secondAttribute="bottom" constant="20" id="D7I-EO-rY1"/>
                             <constraint firstItem="ePU-z4-mBh" firstAttribute="leading" secondItem="plB-x2-a1G" secondAttribute="leading" id="J9d-EI-iuY"/>
                             <constraint firstItem="CHp-Ny-lqT" firstAttribute="top" secondItem="ePU-z4-mBh" secondAttribute="bottom" constant="20" id="JI1-3z-S8d"/>
                             <constraint firstItem="c4h-mH-Jng" firstAttribute="top" secondItem="plB-x2-a1G" secondAttribute="top" constant="14" id="Ld5-h5-o6z"/>
-                            <constraint firstItem="plB-x2-a1G" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c4h-mH-Jng" secondAttribute="trailing" constant="20" id="OM6-HJ-9Aq"/>
                             <constraint firstItem="Aeq-81-QRc" firstAttribute="top" secondItem="plB-x2-a1G" secondAttribute="top" constant="14" id="ORp-gN-RLy"/>
+                            <constraint firstItem="bCs-Uz-rYP" firstAttribute="top" secondItem="plB-x2-a1G" secondAttribute="top" constant="14" id="RQP-oJ-1iC"/>
                             <constraint firstItem="ePU-z4-mBh" firstAttribute="trailing" secondItem="plB-x2-a1G" secondAttribute="trailing" id="TTM-be-jQ6"/>
+                            <constraint firstItem="bCs-Uz-rYP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c4h-mH-Jng" secondAttribute="trailing" constant="8" id="bBN-2i-pys"/>
                             <constraint firstItem="c4h-mH-Jng" firstAttribute="leading" secondItem="Aeq-81-QRc" secondAttribute="trailing" constant="8" id="u1o-sO-3nr"/>
                             <constraint firstItem="CHp-Ny-lqT" firstAttribute="leading" secondItem="plB-x2-a1G" secondAttribute="leading" constant="20" id="vcY-Dv-Q6R"/>
                         </constraints>
@@ -301,6 +309,7 @@
                     <connections>
                         <outlet property="captionLabel" destination="CHp-Ny-lqT" id="rmW-uG-rih"/>
                         <outlet property="postView" destination="ePU-z4-mBh" id="mNI-Mi-KNU"/>
+                        <outlet property="timestampLabel" destination="bCs-Uz-rYP" id="2MI-bB-TCW"/>
                         <outlet property="usernameLabel" destination="c4h-mH-Jng" id="5fC-Ir-9FR"/>
                     </connections>
                 </viewController>
