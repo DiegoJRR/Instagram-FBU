@@ -41,8 +41,7 @@
     
     NSDate *createdAt = [self.post createdAt];
     NSString *ago = [createdAt timeAgo];
-    NSString *createdAtString = ago;
-    self.timestampLabel.text = createdAtString;
+    self.timestampLabel.text = ago;
 }
 
 /*
