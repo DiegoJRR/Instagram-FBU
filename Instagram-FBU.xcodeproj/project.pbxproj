@@ -12,6 +12,7 @@
 		2F382A5624B542D6005C16B9 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F382A5524B542D6005C16B9 /* ComposeViewController.m */; };
 		2F67E0D024B66422004614F8 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F67E0CF24B66422004614F8 /* Post.m */; };
 		2F67E0D324B68457004614F8 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F67E0D224B68457004614F8 /* PostTableViewCell.m */; };
+		2F67E0D624B7DCFA004614F8 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F67E0D524B7DCFA004614F8 /* DetailsViewController.m */; };
 		2F8364FE24B3BD9A005B4D13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8364FD24B3BD9A005B4D13 /* AppDelegate.m */; };
 		2F83650124B3BD9A005B4D13 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F83650024B3BD9A005B4D13 /* SceneDelegate.m */; };
 		2F83650724B3BD9A005B4D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F83650524B3BD9A005B4D13 /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 		2F67E0CF24B66422004614F8 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		2F67E0D124B68457004614F8 /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
 		2F67E0D224B68457004614F8 /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		2F67E0D424B7DCFA004614F8 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		2F67E0D524B7DCFA004614F8 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		2F8364F924B3BD9A005B4D13 /* Instagram-FBU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-FBU.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8364FC24B3BD9A005B4D13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F8364FD24B3BD9A005B4D13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				2F382A4F24B4AC85005C16B9 /* FeedViewController.m */,
 				2F382A5424B542D6005C16B9 /* ComposeViewController.h */,
 				2F382A5524B542D6005C16B9 /* ComposeViewController.m */,
+				2F67E0D424B7DCFA004614F8 /* DetailsViewController.h */,
+				2F67E0D524B7DCFA004614F8 /* DetailsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 				2F382A5624B542D6005C16B9 /* ComposeViewController.m in Sources */,
 				2F83650F24B3BD9C005B4D13 /* main.m in Sources */,
 				2F83650124B3BD9A005B4D13 /* SceneDelegate.m in Sources */,
+				2F67E0D624B7DCFA004614F8 /* DetailsViewController.m in Sources */,
 				2F67E0D024B66422004614F8 /* Post.m in Sources */,
 				2F67E0D324B68457004614F8 /* PostTableViewCell.m in Sources */,
 			);
