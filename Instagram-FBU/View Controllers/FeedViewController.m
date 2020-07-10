@@ -114,18 +114,20 @@
 //     Get the new view controller using [segue destinationViewController].
 //     Pass the selected object to the new view controller.
     
-    // Set the tappedCell as the cell that initiated the segue
-    UITableViewCell *tappedCell = sender;
-    
-    // Get the corresponding indexPath of the cell
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:tappedCell];
-    
-    // Get the movie corresponding to that cell
-    Post *post = self.posts[indexPath.row];
-    
-    // Set the viewController to segue into and pass the movie object
-    DetailsViewController *detailsViewController = [segue destinationViewController];
-    detailsViewController.post = post;
+    if ([[segue identifier] isEqualToString:@"detailSegue"]) {
+        // Set the tappedCell as the cell that initiated the segue
+        UITableViewCell *tappedCell = sender;
+        
+        // Get the corresponding indexPath of the cell
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:tappedCell];
+        
+        // Get the movie corresponding to that cell
+        Post *post = self.posts[indexPath.row];
+        
+        // Set the viewController to segue into and pass the movie object
+        DetailsViewController *detailsViewController = [segue destinationViewController];
+        detailsViewController.post = post;
+    }
 }
 
 
