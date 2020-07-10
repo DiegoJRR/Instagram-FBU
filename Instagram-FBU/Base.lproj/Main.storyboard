@@ -250,7 +250,7 @@
         <!--Post detail-->
         <scene sceneID="5km-Z4-Sht">
             <objects>
-                <viewController title="Post detail" modalPresentationStyle="fullScreen" id="7t1-Zq-R0q" sceneMemberID="viewController">
+                <viewController title="Post detail" modalPresentationStyle="fullScreen" id="7t1-Zq-R0q" customClass="DetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yly-nb-nQJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
