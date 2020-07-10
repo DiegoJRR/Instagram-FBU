@@ -11,7 +11,7 @@
 @interface DetailsViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *postView;
 @property (weak, nonatomic) IBOutlet UILabel *captionLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timestampLabel;
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 
 @end
 
@@ -24,6 +24,7 @@
     
     //Setup the post caption and label
     self.captionLabel.text = self.post.caption;
+    self.usernameLabel.text = self.post.author.username;
     
     // Load image from PFFileObject
     // Instantiate a weak link to the cell and load in the image in the request
